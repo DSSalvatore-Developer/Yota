@@ -15,13 +15,16 @@ body {
   text-align: center;
   max-width: 400px;
   width: 100%;
-  padding: 20px;
+  padding: 30px 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .logo {
   width: 100%;
   max-width: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   object-fit: contain;
 }
 
@@ -31,12 +34,17 @@ form {
   gap: 20px;
 }
 
-input, button {
+.input-container {
+  position: relative;
+}
+
+input {
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
   width: 100%;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 input::placeholder {
@@ -44,11 +52,13 @@ input::placeholder {
 }
 
 button {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
   background-color: #0071bc;
   color: white;
-  border: none;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -57,7 +67,12 @@ button:hover {
 }
 
 .password-container {
+  display: flex;
   position: relative;
+}
+
+.password-container input {
+  flex: 1;
 }
 
 .toggle-password {
@@ -68,12 +83,16 @@ button:hover {
   background: none;
   border: none;
   color: #0071bc;
+  font-size: 20px;
   cursor: pointer;
-  font-size: 14px;
+}
+
+.submit-btn {
+  width: 100%;
 }
 
 .feedback {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
 }
 
@@ -81,6 +100,7 @@ button:hover {
   color: #0071bc;
   text-decoration: none;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .feedback a:hover {
