@@ -37,3 +37,11 @@ document.querySelector('#contact-form-data').addEventListener('submit', function
   // Очистка формы
   document.getElementById('contact-form').classList.add('hidden');
 });
+
+// Обработчик для показа/скрытия пароля
+document.getElementById('toggle-password').addEventListener('click', function() {
+  const passwordField = document.getElementById('password');
+  const passwordType = passwordField.type === "password" ? "text" : "password";
+  passwordField.type = passwordType;
+  this.textContent = passwordType === "password" ? "Показать" : "Скрыть";
+});
