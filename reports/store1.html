@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отчеты Точка 1 - Yota Franchise Report</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="report-container">
+    <h1>Отчет Точка 1</h1>
+    <h2>Выбор даты</h2>
+    <input type="date" id="report-date">
+    
+    <h2>Заполнение отчета</h2>
+    <form id="report-form">
+      <label for="sales">Продажа товаров (₽):</label>
+      <input type="number" id="sales" name="sales">
+      
+      <label for="services">Продажа услуг (₽):</label>
+      <input type="number" id="services" name="services">
+      
+      <label for="cash">Наличные (₽):</label>
+      <input type="number" id="cash" name="cash">
+      
+      <label for="card">Карта (₽):</label>
+      <input type="number" id="card" name="card">
+      
+      <button type="submit">Сохранить отчет</button>
+    </form>
+  </div>
 
+  <script src="../js/script.js"></script>
+</body>
+</html>
