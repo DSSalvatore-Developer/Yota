@@ -3,39 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Авторизация - Yota Franchise Report</title>
+  <title>Авторизация</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="auth-container">
-    <img src="images/yota-logo.png" alt="Yota" class="logo">
-    
-    <form id="login-form" class="login-form">
+    <h1>Авторизация</h1>
+    <form id="login-form">
       <div class="input-container">
         <input type="text" id="username" name="username" placeholder="Логин" required>
       </div>
-      <div class="input-container password-container">
+      <div class="input-container">
         <input type="password" id="password" name="password" placeholder="Пароль" required>
-        <button type="button" id="toggle-password" class="toggle-password">👁️</button>
       </div>
       <button type="submit" class="submit-btn">Войти</button>
-    </form>
-    
-    <div class="feedback">
-      <a href="javascript:void(0);" onclick="showContactForm()">Обратная связь</a>
-    </div>
-  </div>
-
-  <div id="contact-form" class="hidden">
-    <h2>Обратная связь</h2>
-    <form id="contact-form-data">
-      <label for="contact-email">Ваш email:</label>
-      <input type="email" id="contact-email" name="email" required>
-      <label for="contact-subject">Тема:</label>
-      <input type="text" id="contact-subject" name="subject" required>
-      <label for="contact-message">Сообщение:</label>
-      <textarea id="contact-message" name="message" required></textarea>
-      <button type="submit">Отправить</button>
     </form>
   </div>
 
