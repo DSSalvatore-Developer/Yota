@@ -43,5 +43,5 @@ document.getElementById('toggle-password').addEventListener('click', function() 
   const passwordField = document.getElementById('password');
   const passwordType = passwordField.type === "password" ? "text" : "password";
   passwordField.type = passwordType;
-  this.textContent = passwordType === "password" ? "Показать" : "Скрыть";
+  this.textContent = passwordType === "password" ? "👁️" : "🙈";
 });
